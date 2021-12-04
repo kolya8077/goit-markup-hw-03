@@ -44,12 +44,16 @@ address {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* =================header================= */
+.hero-heder {
+  border: 1px solid #eeeeee;
+}
 .header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #eeeeee;
 }
 .webstudio {
   margin-right: 93px;
@@ -126,16 +130,17 @@ address {
 
 /* hero */
 .hero-section {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1600px;
-  height: 600px;
-  background-color: #2f303a;
 }
 .hero {
+  margin-bottom: 30px;
   color: var(--text-secondary);
 
   font-weight: 900;
@@ -144,9 +149,17 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
 }
 
 .hero-order {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  border: var(--them-color);
+
   background-color: var(--them-color);
   color: var(--text-secondary);
 
@@ -161,12 +174,18 @@ address {
 /* hero */
 
 /* name list */
-.section-list {
-  display: flex;
+.section-box {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section-list {
+  display: flex;
+}
+.section-li {
+  width: 270px;
+}
 .name-list {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -176,6 +195,7 @@ address {
 }
 
 .paragraph-list {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -189,47 +209,39 @@ address {
   display: flex;
   justify-content: space-between;
 }
-.img-box:last-child {
-  padding-bottom: 94px;
-}
-.title-img {
-  padding-bottom: 50px;
-}
+
 .title-section {
+  margin-bottom: 50px;
+
+  color: var(--text-primary);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-primary);
 }
 /*  title section */
 /* team */
 .team {
   background-color: #f5f4fa;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.title-team {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 93px;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-box {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 .team-box-list {
   background-color: var(--text-secondary);
   width: 270px;
   height: 368px;
 }
-.name-people {
+.conteiner-img {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+.name-people {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -239,8 +251,10 @@ address {
 }
 
 .signature {
+  margin-top: 10px;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-secondary-lighter);
@@ -250,15 +264,21 @@ address {
 /* =================main studio================= */
 
 /* =================main portfolio================= */
+.portfolio-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .maine-buttom-box {
   display: flex;
   justify-content: center;
-}
-.maine-buttom-box {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .maine-button {
+  width: 130px;
+  height: 38px;
+  left: 976px;
+  top: 174px;
+
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -285,7 +305,6 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 94px;
 }
 .card-bg {
   border: 1px solid #eeeeee;
@@ -294,7 +313,11 @@ address {
 .card-bg:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
+.footer-cards-box {
+  padding: 20px 24px;
+}
 .title-card {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -313,28 +336,26 @@ address {
 /* =================footer================= */
 .footer {
   background-color: #2f303a;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .webstudio-footer {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  color: var(--text-secondary);
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--text-secondary);
 }
-.footer-box {
-  padding-bottom: 60px;
+.footer-list + .footer-list {
+  margin-top: 9px;
 }
 .address {
-  display: block;
-  padding-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -342,8 +363,6 @@ address {
 }
 
 .contacts-footer {
-  display: block;
-  padding-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
